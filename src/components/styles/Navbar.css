@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
 .navbar-component {
   background-color: transparent !important;
   height: 120px !important;
@@ -11,29 +17,106 @@
   width: 1024px !important;
 }
 .navbar-component .navbar .left-flex-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  align-items: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  height: 120px !important;
+  text-align: center !important;
 }
-.navbar-component .navbar .left-flex-container .logo {
-  height: 100px !important;
+.navbar-component .navbar .left-flex-container .logo-flex-container .brand-name {
+  color: white !important;
+  cursor: pointer !important;
+  font-family: "Tangerine", cursive !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.175rem !important;
   margin-left: 40px !important;
-  width: 100px !important;
+  white-space: nowrap !important;
+}
+.navbar-component .navbar .left-flex-container .logo-flex-container .logo {
+  cursor: pointer !important;
+  height: 50px !important;
+  margin-left: 40px !important;
+  width: 50px !important;
 }
 .navbar-component .navbar .left-flex-container .search-bar-container {
+  align-items: center !important;
   background-color: white !important;
   border-radius: 5px !important;
+  display: flex !important;
   margin-left: 40px !important;
   padding-bottom: 5px !important;
   padding-right: 10px !important;
   padding-top: 5px !important;
   width: 250px !important;
 }
+.navbar-component .navbar .left-flex-container .search-bar-container i {
+  color: black !important;
+  font-size: 18px !important;
+  margin-left: 5px !important;
+}
 .navbar-component .navbar .left-flex-container .search-bar-container .search-bar-input {
   background-color: transparent !important;
   border: none !important;
   font-family: "Overpass", sans-serif !important;
   font-size: 1rem !important;
-  margin-left: 10px !important;
+  margin-left: 5px !important;
+  margin-top: 7px !important;
   outline: none !important;
+  width: 240px !important;
+}
+.navbar-component .navbar .left-flex-container .search-bar-container .search-bar-input::-moz-placeholder {
+  color: lightslategrey !important;
+  font-family: "Overpass", sans-serif !important;
+}
+.navbar-component .navbar .left-flex-container .search-bar-container .search-bar-input:-ms-input-placeholder {
+  color: lightslategrey !important;
+  font-family: "Overpass", sans-serif !important;
+}
+.navbar-component .navbar .left-flex-container .search-bar-container .search-bar-input::placeholder {
+  color: lightslategrey !important;
+  font-family: "Overpass", sans-serif !important;
+}
+.navbar-component .navbar .right-flex-container {
+  align-items: center !important;
+  display: flex !important;
+  margin-right: 40px !important;
+}
+.navbar-component .navbar .right-flex-container .gift-card-page {
+  color: white !important;
+  cursor: pointer !important;
+  font-family: "Overpass", sans-serif !important;
+  font-size: 0.875rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.125rem !important;
+  margin-right: 40px !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+}
+.navbar-component .navbar .right-flex-container .shopping-cart-container {
+  align-items: center !important;
+  display: flex;
+  height: 100% !important;
+  justify-content: center;
+  position: relative;
+  width: 100% !important;
+}
+.navbar-component .navbar .right-flex-container .shopping-cart-container i {
+  color: white !important;
+  cursor: pointer !important;
+  font-size: 30px !important;
+}
+.navbar-component .navbar .right-flex-container .shopping-cart-container .items-in-cart {
+  color: black !important;
+  cursor: pointer !important;
+  font-size: 0.875rem !important;
+  font-weight: 700 !important;
+  position: absolute !important;
+  right: 10px !important;
+  top: -1.5px !important;
+}
+
+.shopping-cart {
+  color: red;
+  font-size: 20px;
 }/*# sourceMappingURL=Navbar.css.map */
