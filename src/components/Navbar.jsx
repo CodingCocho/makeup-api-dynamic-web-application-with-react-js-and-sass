@@ -1,8 +1,14 @@
 import './styles/Navbar.css';
 import Logo from '../images/logo.png'
+import {NavLink} from 'react-router-dom';
+import {useState} from 'react';
 
 export const Navbar = () =>
 {
+    const [activeLink, setActiveLink] = useState(false);
+
+    const handleLinkClick = ()  => setActiveLink(!activeLink)
+
     return (
         <div className="navbar-component">
             <div className="navbar">
@@ -35,13 +41,14 @@ export const Navbar = () =>
                     </div>
                 </div>
                 <div className="right-flex-container">
-                    <a 
-                    className="gift-card-page" 
-                    id="link"
-                    href="google.com"
+                    <NavLink
+                    className={activeLink ? "active-link" : "gift-card-link"}
+                    exact 
+                    onClick={handleLinkClick}
+                    to="/giftcards"
                     >
-                        Gift Cards                        
-                    </a>
+                        Gift Cards
+                    </NavLink>
                     <div className="shopping-cart-container">
                         <i 
                         class="fa-solid fa-cart-shopping"

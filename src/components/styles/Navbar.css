@@ -14,7 +14,7 @@
   display: flex !important;
   justify-content: space-between !important;
   height: 100% !important;
-  width: 1024px !important;
+  width: 100vw !important;
 }
 .navbar-component .navbar .left-flex-container {
   align-items: center !important;
@@ -82,7 +82,18 @@
   display: flex !important;
   margin-right: 40px !important;
 }
-.navbar-component .navbar .right-flex-container .gift-card-page {
+.navbar-component .navbar .right-flex-container .active-link {
+  color: antiquewhite !important;
+  cursor: pointer !important;
+  font-family: "Overpass", sans-serif !important;
+  font-size: 0.875rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.125rem !important;
+  margin-right: 40px !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+}
+.navbar-component .navbar .right-flex-container .gift-card-link {
   color: white !important;
   cursor: pointer !important;
   font-family: "Overpass", sans-serif !important;
@@ -92,6 +103,9 @@
   margin-right: 40px !important;
   text-decoration: none !important;
   white-space: nowrap !important;
+}
+.navbar-component .navbar .right-flex-container .gift-card-link:hover {
+  color: antiquewhite !important;
 }
 .navbar-component .navbar .right-flex-container .shopping-cart-container {
   align-items: center !important;
@@ -105,6 +119,9 @@
   color: white !important;
   cursor: pointer !important;
   font-size: 30px !important;
+}
+.navbar-component .navbar .right-flex-container .shopping-cart-container i:hover {
+  color: antiquewhite !important;
 }
 .navbar-component .navbar .right-flex-container .shopping-cart-container .items-in-cart {
   color: black !important;

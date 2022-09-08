@@ -21,7 +21,7 @@ $logoFontFamily: 'Tangerine', cursive;
         display: flex !important;
         justify-content: space-between !important;
         height: 100% !important;
-        width: 1024px !important;
+        width: 100vw !important;
         .left-flex-container
         {
             align-items: center !important; 
@@ -90,7 +90,19 @@ $logoFontFamily: 'Tangerine', cursive;
             align-items: center !important;
             display: flex !important;
             margin-right: 40px !important;
-            .gift-card-page
+            .active-link
+            {
+                color: antiquewhite !important;
+                cursor: pointer !important;
+                font-family: $fontFamily !important;
+                font-size: .875rem   !important;
+                font-weight: 700 !important;
+                letter-spacing: .125rem !important;
+                margin-right: 40px !important;
+                text-decoration: none !important;
+                white-space: nowrap !important;
+            }
+            .gift-card-link
             {
                 color: white !important;
                 cursor: pointer !important;
@@ -101,6 +113,10 @@ $logoFontFamily: 'Tangerine', cursive;
                 margin-right: 40px !important;
                 text-decoration: none !important;
                 white-space: nowrap !important;
+                &:hover
+                {
+                    color: antiquewhite !important;
+                }
             }
             .shopping-cart-container
             {
@@ -115,6 +131,10 @@ $logoFontFamily: 'Tangerine', cursive;
                     color: white !important;
                     cursor: pointer !important;
                     font-size: 30px !important;
+                    &:hover
+                    {
+                        color: antiquewhite !important;
+                    }
                 }
                 .items-in-cart
                 {
@@ -136,3 +156,4 @@ $logoFontFamily: 'Tangerine', cursive;
     color: red;
     font-size: 20px;
 }
+
