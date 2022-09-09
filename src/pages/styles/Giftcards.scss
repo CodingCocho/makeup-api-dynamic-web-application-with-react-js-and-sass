@@ -1,3 +1,6 @@
+$fontFamily: 'Overpass', sans-serif;
+$logoFontFamily: 'Tangerine', cursive;
+
 *
 {
     box-sizing: border-box !important;
@@ -7,8 +10,138 @@
 
 .Giftcards
 {
-    .makeup-divider
+    background-color: antiquewhite !important;
+    min-height: 100vh !important;
+    width: 100vw !important;
+    .page
     {
         
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+        width: 1024px !important;
+        .makeup-divider
+        {
+            display: block !important;
+            height: 200px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            width: 1024px !important;
+        }
+        .desktop-flex-container-1
+        {
+            display: flex !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            margin-top: 40px !important;
+            position: relative !important;
+            width: 1024px !important;
+        }
+        .desktop-flex-container-2
+        {
+            align-items: center !important;
+            display: flex !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            margin-top: 40px !important;
+            width: fit-content !important;
+            button
+            {
+                background-color: black !important;
+                border: 2px solid white !important;
+                box-shadow: 5px 5px 5px black !important;
+                color: white !important;
+                cursor: pointer;
+                font-family: $fontFamily !important;
+                font-size: 1rem !important;
+                font-weight: 700 !important;
+                margin-left: 10px !important;
+                margin-right: 10px !important;
+                padding: 10px !important;
+                outline: none !important;
+            }
+        }
+    }
+}
+
+.heading-1, .heading-2
+{
+    color: black !important;
+    font-weight: 700 !important;
+}
+
+.heading-1
+{
+    font-family: $logoFontFamily;
+    font-size: 3rem !important;
+    margin-top: 40px !important;
+}
+
+.heading-2
+{
+    font-family: $fontFamily;
+    font-size: 1.75rem !important;
+    margin-top: 20px !important;
+}
+
+.hero-image-1, .hero-image-2
+{
+    border: 2px solid black !important;
+    box-shadow: 5px 5px 5px black !important;
+    display: block !important;
+    height: 300px !important;
+    width: 450px !important;
+}
+
+.hero-image-1
+{
+    position: relative !important;
+    left: 30px !important;
+}
+
+.hero-image-2
+{
+    position: relative !important;
+    right: 20px !important;
+}
+
+.hero-text-1
+{
+    color: white !important;
+    cursor: pointer !important;
+    display: block !important;
+    font-family: $logoFontFamily !important;
+    font-size: 2.25rem !important;
+    font-weight: 700 !important;
+    height: fit-content !important;
+    left: -370px !important;
+    position: relative !important;
+    text-align: left !important;
+    top: 20px !important;
+    white-space: nowrap !important;
+    &:hover
+    {
+        text-shadow: 2px 2px black !important;
+    }
+}
+
+.hero-text-2
+{
+    color: white !important;
+    cursor: pointer !important;
+    display: block !important;
+    font-family: $logoFontFamily !important;
+    font-size: 2.25rem !important;
+    font-weight: 700 !important;
+    height: fit-content !important;
+    left: -420px !important;
+    position: relative !important;
+    text-align: left !important;
+    top: 20px !important;
+    white-space: nowrap !important;
+    &:hover
+    {
+        text-shadow: 2px 2px black !important;
     }
 }
