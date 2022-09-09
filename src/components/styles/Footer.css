@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.Footer {
+  align-items: center !important;
+  background-color: black !important;
+  bottom: 0px !important;
+  display: flex !important;
+  height: 200px !important;
+  left: 0px !important;
+  position: absolute !important;
+  right: 0px !important;
+  width: 100vw !important;
+}
+.Footer .desktop-flex-container {
+  align-items: flex-start !important;
+  display: flex !important;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: left !important;
+  width: 1024px !important;
+}
+.Footer .desktop-flex-container .footer-list {
+  font-family: "Tangerine", cursive;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  padding-right: 40px !important;
+  list-style: none !important;
+}
+.Footer .desktop-flex-container .footer-list .footer-item {
+  cursor: pointer !important;
+  font-family: "Overpass", sans-serif;
+  font-size: 0.75rem !important;
+  font-weight: 400 !important;
+  margin-top: 4px !important;
+}
+.Footer .desktop-flex-container .footer-list .footer-item:hover {
+  color: antiquewhite !important;
+}
+
+ul, li {
+  color: white !important;
+}/*# sourceMappingURL=Footer.css.map */

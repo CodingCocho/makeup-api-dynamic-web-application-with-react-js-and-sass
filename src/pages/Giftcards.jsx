@@ -1,3 +1,4 @@
+import {Footer} from '../components/Footer';
 import {Navbar} from '../components/Navbar';
 import DividerImage from '../images/divider-image-2.jpg';
 import HeroImage1 from '../images/gift card.jpg';
@@ -73,6 +74,7 @@ export const Giftcards = () =>
                     </button>
                 </div>
             </section>
+            <Footer />
         </div>
     )
 }

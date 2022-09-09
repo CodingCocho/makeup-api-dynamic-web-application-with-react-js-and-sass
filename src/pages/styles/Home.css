@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.Home {
+  background-color: antiquewhite !important;
+  min-height: 100vh !important;
+  width: 100vw !important;
+}
+.Home .page {
+  border: 1px solid orange;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+  width: 1024px !important;
+}/*# sourceMappingURL=Home.css.map */
