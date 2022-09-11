@@ -34,6 +34,7 @@ $logoFontFamily: 'Tangerine', cursive;
             font-family: $logoFontFamily;
             font-size: 2rem !important;
             font-weight: 700 !important;
+            letter-spacing: .175rem !important;
             padding-right: 40px !important;
             list-style: none !important;
             .footer-item
@@ -42,6 +43,7 @@ $logoFontFamily: 'Tangerine', cursive;
                 font-family: $fontFamily;
                 font-size: .75rem !important;
                 font-weight:  400 !important;
+                letter-spacing: normal !important;
                 margin-top: 4px !important;
                 &:hover
                 {
