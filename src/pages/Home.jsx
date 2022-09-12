@@ -1,6 +1,7 @@
 import HeroImage from '../images/home-hero-image.jpg';
 import {Footer} from '../components/Footer';
 import {Navbar} from '../components/Navbar';
+import {NavLink} from 'react-router-dom';
 import './styles/Home.css';
 
 export const Home = () =>
@@ -34,9 +35,11 @@ export const Home = () =>
                         >
                             It's here! The newest arrivals. The hottest exclusives. 50% off must-haves with Daily Beauty Steals®. Get to it.
                         </p>
-                        <div 
+                        <NavLink
                         className="shop-now-container"
-                        >
+                       exact
+                       to="/catalog"
+                       >
                             <span 
                             className="shop-now"
                             >
@@ -46,7 +49,7 @@ export const Home = () =>
                             class="fa-solid fa-arrow-right"
                             >
                             </i>
-                        </div>
+                        </NavLink>
                     </div>
                     <div 
                     className="right-flex-container"

@@ -13,4 +13,13 @@ $logoFontFamily: 'Tangerine', cursive;
     background-color: antiquewhite !important;
     min-height: 100vh !important;
     width: 100vw !important;
+    .page
+    {
+        border: 1px solid orange;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        min-height: calc(100vh - 320px) !important;
+        text-align: center !important;
+        width: 1024px !important;
+    }
 }

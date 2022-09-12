@@ -15,8 +15,8 @@ $logoFontFamily: 'Tangerine', cursive;
     width: 100vw !important;
     .page
     {
-        
         display: block !important;
+        height: calc(100vh - 320px) !important;
         margin-left: auto !important;
         margin-right: auto !important;
         text-align: center !important;

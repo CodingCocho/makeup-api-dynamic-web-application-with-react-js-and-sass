@@ -7,6 +7,8 @@
 .navbar-component {
   background-color: transparent !important;
   height: 120px !important;
+  min-width: 100vw !important;
+  max-width: 100vw !important;
 }
 .navbar-component .navbar {
   align-items: center !important;

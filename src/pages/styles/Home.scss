@@ -16,6 +16,7 @@ $logoFontFamily: 'Tangerine', cursive;
     .page
     {
         display: block !important;
+        height: calc(100vh - 320px) !important;
         margin-left: auto !important;
         margin-right: auto !important;
         text-align: center !important;
@@ -31,27 +32,30 @@ $logoFontFamily: 'Tangerine', cursive;
                 height:  600px !important;
                 width: 50% !important;
                 text-align: left !important;
-                p, div
+                p, .shop-now-container
                 {
                     margin-left: 100px !important;
                 }
                 .home-heading-1
                 {
-                    font-family: $logoFontFamily;
-                    font-size: 2.5rem !important;
+                    color: black !important;
+                    font-family: $fontFamily;
+                    font-size: 1.5rem !important;
                     font-weight: 700 !important;
                     letter-spacing: .175rem !important;
                     margin-top: 120px !important;
                 }
                 .home-heading-2
                 {
-                    font-family: $fontFamily;
-                    font-size: 4rem !important;
+                    color: black !important;
+                    font-family: $logoFontFamily;
+                    font-size: 6rem !important;
                     font-weight: 700 !important;
                     margin-top: 20px !important;
                 }
                 .home-heading-3
                 {
+                    color: black !important;
                     font-family: $fontFamily;
                     font-size: 1rem !important;
                     font-weight: 700 !important;
@@ -60,11 +64,13 @@ $logoFontFamily: 'Tangerine', cursive;
                 .shop-now-container
                 {
                     align-items: center !important;
+                    color: black !important;
                     cursor: pointer !important;
                     display: flex !important;
                     height: fit-content !important;
                     position: relative !important;
                     margin-top: 20px !important;
+                    text-decoration: none !important;
                     width: fit-content !important;
                     i
                     {

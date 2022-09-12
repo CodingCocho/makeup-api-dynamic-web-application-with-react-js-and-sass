@@ -1,4 +1,4 @@
-import './styles/CatalogItem.css';
+import './styles/CheckoutItem.css';
 
 export const CheckoutItem = () =>
 {
@@ -6,7 +6,7 @@ export const CheckoutItem = () =>
         <div 
         className="CheckoutItem"
         >
-
+            Hello
         </div>
     )
 }

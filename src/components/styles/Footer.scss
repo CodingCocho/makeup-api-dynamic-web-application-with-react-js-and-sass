@@ -16,9 +16,10 @@ $logoFontFamily: 'Tangerine', cursive;
     display: flex !important;
     height: 200px !important;
     left: 0px !important;
-    position: absolute !important;
+    position: relative !important;
     right: 0px !important;
-    width: 100vw !important;
+    min-width: 100vw !important;
+    overflow-x: hidden !important;
     .desktop-flex-container
     {
         align-items: flex-start!important;

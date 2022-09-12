@@ -10,4 +10,11 @@
   justify-content: center;
   height: 100vh !important;
   width: 100vw !important;
+}
+
+.body-styling {
+  background-color: antiquewhite !important;
+  height: 100vh;
+  overflow-x: hidden !important;
+  width: 100vw;
 }/*# sourceMappingURL=App.css.map */

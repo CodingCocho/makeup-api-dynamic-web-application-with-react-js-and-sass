@@ -12,7 +12,7 @@ export const Catalog = () =>
             <section 
             className="page"
             >
-
+             
             </section>
             <Footer />
         </div>

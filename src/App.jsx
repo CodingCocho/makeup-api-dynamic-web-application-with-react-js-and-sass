@@ -7,6 +7,8 @@ import {Home} from './pages/Home';
 
 
 function App() {
+  document.body.classList.add('body-styling');
+  
   return (
     <BrowserRouter>
       <Routes>
