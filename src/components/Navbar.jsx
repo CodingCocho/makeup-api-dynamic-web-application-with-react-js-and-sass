@@ -68,7 +68,7 @@ export const Navbar = () =>
                         className='items-in-cart' 
                         id='items-in-cart'
                         >
-                            2
+                            0
                         </p>
                     </NavLink>
                 </div> 
