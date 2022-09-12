@@ -23,6 +23,9 @@
   height: 120px !important;
   text-align: center !important;
 }
+.navbar-component .navbar .left-flex-container .logo-flex-container {
+  text-decoration: none !important;
+}
 .navbar-component .navbar .left-flex-container .logo-flex-container .brand-name {
   color: white !important;
   cursor: pointer !important;
@@ -93,7 +96,7 @@
   text-decoration: none !important;
   white-space: nowrap !important;
 }
-.navbar-component .navbar .right-flex-container .gift-card-link {
+.navbar-component .navbar .right-flex-container .unactive-link {
   color: white !important;
   cursor: pointer !important;
   font-family: "Overpass", sans-serif !important;
@@ -104,15 +107,16 @@
   text-decoration: none !important;
   white-space: nowrap !important;
 }
-.navbar-component .navbar .right-flex-container .gift-card-link:hover {
+.navbar-component .navbar .right-flex-container .unactive-link:hover {
   color: antiquewhite !important;
 }
 .navbar-component .navbar .right-flex-container .shopping-cart-container {
   align-items: center !important;
-  display: flex;
+  display: flex !important;
   height: 100% !important;
   justify-content: center;
   position: relative;
+  text-decoration: none !important;
   width: 100% !important;
 }
 .navbar-component .navbar .right-flex-container .shopping-cart-container i {
@@ -133,7 +137,26 @@
   top: -1.5px !important;
 }
 
-.shopping-cart {
-  color: red;
-  font-size: 20px;
+.active-cart {
+  align-items: center !important;
+  display: flex !important;
+  height: 100% !important;
+  justify-content: center;
+  position: relative;
+  text-decoration: none !important;
+  width: 100% !important;
+}
+.active-cart i {
+  color: antiquewhite !important;
+  cursor: pointer !important;
+  font-size: 30px !important;
+}
+.active-cart .items-in-cart {
+  color: black !important;
+  cursor: pointer !important;
+  font-size: 0.875rem !important;
+  font-weight: 700 !important;
+  position: absolute !important;
+  right: 10px !important;
+  top: -1.5px !important;
 }/*# sourceMappingURL=Navbar.css.map */

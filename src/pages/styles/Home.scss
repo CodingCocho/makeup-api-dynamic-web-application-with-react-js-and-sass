@@ -69,6 +69,7 @@ $logoFontFamily: 'Tangerine', cursive;
                     i
                     {
                         margin-left: 10px !important;
+                        transition: transform .5s !important;
                     }
                     .shop-now
                     {
@@ -81,7 +82,6 @@ $logoFontFamily: 'Tangerine', cursive;
                         i
                         {
                             transform: translate(5px, 0px); 
-                            transition-duration: .5s !important;
                         }
                     }
                 }

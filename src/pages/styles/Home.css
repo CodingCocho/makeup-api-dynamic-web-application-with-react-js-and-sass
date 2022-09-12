@@ -64,6 +64,7 @@
 }
 .Home .page .desktop-flex-container .left-flex-container .shop-now-container i {
   margin-left: 10px !important;
+  transition: transform 0.5s !important;
 }
 .Home .page .desktop-flex-container .left-flex-container .shop-now-container .shop-now {
   font-family: "Overpass", sans-serif;
@@ -72,7 +73,6 @@
 }
 .Home .page .desktop-flex-container .left-flex-container .shop-now-container:hover i {
   transform: translate(5px, 0px);
-  transition-duration: 0.5s !important;
 }
 .Home .page .desktop-flex-container .right-flex-container {
   align-items: center !important;

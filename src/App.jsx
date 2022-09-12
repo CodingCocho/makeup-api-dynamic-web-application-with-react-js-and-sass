@@ -1,7 +1,10 @@
 import './App.css';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
-import {Home} from './pages/Home';
+import {Catalog} from  './pages/Catalog';
+import {Checkout} from './pages/Checkout';
 import {Giftcards} from './pages/Giftcards';
+import {Home} from './pages/Home';
+
 
 function App() {
   return (
@@ -13,8 +16,18 @@ function App() {
         >
         </Route>
         <Route
+        element={<Catalog />}
+        path="/catalog"
+        >
+        </Route>
+        <Route
         element={<Giftcards />}
         path="/giftcards"
+        >
+        </Route>
+        <Route
+        element={<Checkout />}
+        path="/checkout"
         >
         </Route>
       </Routes>

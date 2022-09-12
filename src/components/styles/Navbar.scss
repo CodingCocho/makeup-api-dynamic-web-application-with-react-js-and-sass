@@ -31,6 +31,7 @@ $logoFontFamily: 'Tangerine', cursive;
             text-align: center !important;
             .logo-flex-container
             {
+                text-decoration: none !important;
                 .brand-name
                 {
                     color: white !important;
@@ -102,7 +103,7 @@ $logoFontFamily: 'Tangerine', cursive;
                 text-decoration: none !important;
                 white-space: nowrap !important;
             }
-            .gift-card-link
+            .unactive-link
             {
                 color: white !important;
                 cursor: pointer !important;
@@ -121,10 +122,11 @@ $logoFontFamily: 'Tangerine', cursive;
             .shopping-cart-container
             {
                 align-items: center !important;
-                display: flex;
+                display: flex !important;
                 height: 100% !important;
                 justify-content: center;
                 position: relative;
+                text-decoration: none !important;
                 width: 100% !important;
                 i
                 {
@@ -151,9 +153,35 @@ $logoFontFamily: 'Tangerine', cursive;
     }  
 }
 
-.shopping-cart
+.active-cart
 {
-    color: red;
-    font-size: 20px;
+    align-items: center !important;
+    display: flex !important;
+    height: 100% !important;
+    justify-content: center;
+    position: relative;
+    text-decoration: none !important;
+    width: 100% !important;
+    i
+    {
+        color: antiquewhite !important;
+        cursor: pointer !important;
+        font-size: 30px !important;
+    }
+    .items-in-cart
+    {
+        color: black !important;
+        cursor:  pointer !important;
+        font-size: .875rem !important;
+        font-weight: 700 !important;
+        position: absolute !important;
+        right: 10px !important;
+        top: -1.5px !important;
+    }
 }
+
+
+
+
+
 

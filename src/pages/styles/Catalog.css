@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.Catalog {
+  background-color: antiquewhite !important;
+  min-height: 100vh !important;
+  width: 100vw !important;
+}/*# sourceMappingURL=Catalog.css.map */
