@@ -12,7 +12,61 @@ $logoFontFamily: 'Tangerine', cursive;
 {
     border: 1px solid black !important;
     box-shadow: 5px 5px 5px black !important;
-    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+    padding: 25px !important;
     height: 200px !important;
     width: 500px !important;
+    .desktop-flex-container
+    {
+        align-items: flex-start !important;
+        display: flex !important;
+        .product-image
+        {
+            border: 1px solid black;
+            height: 150px !important;
+            width: 150px !important;
+        }
+        .desktop-flex-container-2
+        {
+            margin-left: 20px !important;
+            text-align: left !important;
+            .product-name
+            {
+                font-family: $fontFamily;
+                font-size: 1.25rem !important;
+            }
+            .in-stock
+            {
+                color: green !important;
+                font-family: $fontFamily;
+                font-size: 1rem !important;
+                margin-top: 30px !important;
+            }
+            .desktop-flex-container-3
+            {
+                font-family: $fontFamily;
+                margin-top: 30px !important;
+                .delete
+                {
+                    background-color: black !important;
+                    border-radius: 20px !important;
+                    color: white !important;
+                    cursor: pointer !important;
+                    margin-left: 20px !important;
+                    padding: 5px 12.5px !important;
+                    outline: none !important;
+                }
+                .quantity-input
+                {
+                    padding: 5px 12.5px !important;
+                }
+            }
+        }
+        .price
+        {
+            font-family: $fontFamily;
+            font-size: 1.25rem !important;
+            margin-left: 40px !important;
+        }
+    }
 }

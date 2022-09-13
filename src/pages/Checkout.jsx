@@ -16,15 +16,24 @@ export const Checkout = () =>
                 >   
                     <CheckoutItem />
                     <CheckoutItem />
+                    <CheckoutItem />
+                    <CheckoutItem />
+                    <CheckoutItem />
+                    <CheckoutItem />
                 </div>
                 <div 
                 className="desktop-right-flex-container"
                 >
-                    <div 
-                    className="checkout-summary-container"
+                    <p 
+                    className="subtotal" 
                     >
-                        
-                    </div>
+                        Subtotal (<span id="total-item"> 1 item</span>): <span id="total-price"> $10.99</span>  
+                    </p>
+                    <button 
+                    className="place-order"
+                    >
+                        Proceed to checkout
+                    </button>
                 </div>
             </section>
             <Footer />

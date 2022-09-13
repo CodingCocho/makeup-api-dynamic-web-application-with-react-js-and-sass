@@ -24,20 +24,6 @@ export const Navbar = () =>
                         src={Logo}  
                         />
                     </ NavLink>
-                    <div 
-                    className="search-bar-container"
-                    >
-                        <i 
-                        class="fa-solid fa-magnifying-glass"
-                        >
-                        </i>
-                        <input  
-                        className="search-bar-input" 
-                        id="search-bar-input"
-                        placeholder='Search...' 
-                        type="text"
-                        />
-                    </div>
                 </div>
                 <div className="right-flex-container">
                     <NavLink

@@ -7,7 +7,52 @@
 .CheckoutItem {
   border: 1px solid black !important;
   box-shadow: 5px 5px 5px black !important;
-  margin-top: 40px !important;
+  margin-bottom: 40px !important;
+  padding: 25px !important;
   height: 200px !important;
   width: 500px !important;
+}
+.CheckoutItem .desktop-flex-container {
+  align-items: flex-start !important;
+  display: flex !important;
+}
+.CheckoutItem .desktop-flex-container .product-image {
+  border: 1px solid black;
+  height: 150px !important;
+  width: 150px !important;
+}
+.CheckoutItem .desktop-flex-container .desktop-flex-container-2 {
+  margin-left: 20px !important;
+  text-align: left !important;
+}
+.CheckoutItem .desktop-flex-container .desktop-flex-container-2 .product-name {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.25rem !important;
+}
+.CheckoutItem .desktop-flex-container .desktop-flex-container-2 .in-stock {
+  color: green !important;
+  font-family: "Overpass", sans-serif;
+  font-size: 1rem !important;
+  margin-top: 30px !important;
+}
+.CheckoutItem .desktop-flex-container .desktop-flex-container-2 .desktop-flex-container-3 {
+  font-family: "Overpass", sans-serif;
+  margin-top: 30px !important;
+}
+.CheckoutItem .desktop-flex-container .desktop-flex-container-2 .desktop-flex-container-3 .delete {
+  background-color: black !important;
+  border-radius: 20px !important;
+  color: white !important;
+  cursor: pointer !important;
+  margin-left: 20px !important;
+  padding: 5px 12.5px !important;
+  outline: none !important;
+}
+.CheckoutItem .desktop-flex-container .desktop-flex-container-2 .desktop-flex-container-3 .quantity-input {
+  padding: 5px 12.5px !important;
+}
+.CheckoutItem .desktop-flex-container .price {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.25rem !important;
+  margin-left: 40px !important;
 }/*# sourceMappingURL=CheckoutItem.css.map */

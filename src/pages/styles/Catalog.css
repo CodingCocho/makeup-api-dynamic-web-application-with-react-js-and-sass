@@ -10,7 +10,7 @@
   width: 100vw !important;
 }
 .Catalog .page {
-  border: 1px solid orange;
+  border: 1px solid black;
   margin-left: auto !important;
   margin-right: auto !important;
   min-height: calc(100vh - 320px) !important;
