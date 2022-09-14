@@ -1,9 +1,37 @@
+import axios from 'axios';
+import {useState,useEffect} from 'react';
+import {CatalogItem} from '../components/CatalogItem';
 import {Footer} from '../components/Footer';
 import {Navbar} from '../components/Navbar';
 import './styles/Catalog.css'
 
 export const Catalog = () =>
 {
+
+    const [products, setProducts] = useState([]);
+
+    const [loading, setLoading] = useState(false)
+
+    const getProducts = async () =>
+    {
+        try
+        {
+            const apiResponse = await axios.get('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=foundation');
+            setProducts(apiResponse.data);
+            setLoading(true);
+        }
+        catch(err)
+        {
+            alert(err.message);
+        }
+    }
+
+    useEffect(() =>
+    {
+        getProducts();
+    },[])
+
+    console.log("load")
     return (
         <div 
         className="Catalog"
@@ -12,7 +40,26 @@ export const Catalog = () =>
             <section 
             className="page"
             >
-             
+                {!loading 
+                    &&
+                    <h1 className="loading-text">
+                        Fetching products... 
+                    </h1>
+                }
+                <div 
+                className="desktop-catalog-grid"
+                >
+                    
+                    {loading && products.map((product,index) =>
+                    {
+                        return (<CatalogItem
+                            id={product.id} 
+                            productImage={product.api_featured_image} 
+                            productName={product.name}
+                            productPrice={product.price}
+                            />)
+                    })}                 
+                </div>
             </section>
             <Footer />
         </div>

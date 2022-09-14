@@ -28,21 +28,18 @@ export const Navbar = () =>
                 <div className="right-flex-container">
                     <NavLink
                     className={ ({isActive}) => isActive ? "active-link" : "unactive-link"}
-                    exact 
                     to="/catalog"
                     >
                         Catalog
                     </NavLink>
                     <NavLink
                     className={ ({isActive}) => isActive ? "active-link" : "unactive-link"}
-                    exact 
                     to="/giftcards"
                     >
                         Gift Cards
                     </NavLink>
                     <NavLink 
                     className={ ({isActive}) => isActive ? "active-cart" : "shopping-cart-container"}
-                    exact
                     to="/checkout"
                     >
                         <i 

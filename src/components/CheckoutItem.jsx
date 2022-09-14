@@ -1,4 +1,4 @@
-import SampleProduct from '../images/makeup.jpg'
+import SampleProduct from '../images/product-example.png'
 import './styles/CheckoutItem.css';
 
 export const CheckoutItem = () =>

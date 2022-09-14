@@ -15,11 +15,16 @@ $logoFontFamily: 'Tangerine', cursive;
     width: 100vw !important;
     .page
     {
-        border: 1px solid black;
         margin-left: auto !important;
         margin-right: auto !important;
         min-height: calc(100vh - 320px) !important;
+        padding: 40px 40px !important;
         text-align: center !important;
         width: 1024px !important;
+        .desktop-catalog-grid
+        {
+            display: grid !important;
+            grid-template-columns: 1fr 1fr 1fr 1fr !important;
+        }
     }
 }
