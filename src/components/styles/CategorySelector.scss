@@ -1,0 +1,59 @@
+$fontFamily: 'Overpass', sans-serif;
+$logoFontFamily: 'Tangerine', cursive;
+
+*
+{
+    box-sizing: border-box !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.CategorySelector
+{
+    display: block !important;
+    height: 250px !important;
+    margin-bottom: 40px !important;
+    text-align: center !important;
+    width: fit-content !important;
+    .image-container
+    {
+        align-items: center !important;
+        background-color: white !important;
+        border-radius: 50%;
+        display: flex !important;
+        height: 175px !important;
+        justify-content: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 175px !important;
+        &:hover
+        {
+            .category-image
+            {
+                height: 125px !important;
+                width: 125px !important;
+            }
+        }
+    }
+}
+
+.category-image
+{
+    height: 100px !important;
+    transition: all ease .5s !important;
+    width: 100px !important;
+}
+
+.category-name
+{
+    margin-top: 10px !important;
+}
+
+.category
+{
+    color: black !important;
+    font-family: $fontFamily;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+}
+

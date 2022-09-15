@@ -1,65 +1,79 @@
-import axios from 'axios';
-import {useState,useEffect} from 'react';
-import {CatalogItem} from '../components/CatalogItem';
+import Blushes from '../images/blushes-category-photo.jpg';
+import Bronzers from '../images/bronzers-category-photo.jpg';
+import Eyebrows from '../images/eyebrows-category-photo.jpg'
+import Eyeliners from '../images/eyeliner-category-photo.jpg';
+import Eyeshadows from '../images/eyeshadows-category-photo.jpg';
+import Foundations from '../images/foundations-category-photo.jpg';
+import LipLiners from '../images/lipliners-category-photo.jpg';
+import LipSticks from '../images/lipsticks-category-photo.jpg';
+import Mascaras from '../images/mascara-category-photo.jpg';
+import NailPolishes from '../images/nail-polishes-category-photo.jpg';
+import { CategorySelector } from '../components/CategorySelector';
 import {Footer} from '../components/Footer';
 import {Navbar} from '../components/Navbar';
 import './styles/Catalog.css'
 
 export const Catalog = () =>
 {
-
-    const [products, setProducts] = useState([]);
-
-    const [loading, setLoading] = useState(false)
-
-    const getProducts = async () =>
-    {
-        try
-        {
-            const apiResponse = await axios.get('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=foundation');
-            setProducts(apiResponse.data);
-            setLoading(true);
-        }
-        catch(err)
-        {
-            alert(err.message);
-        }
-    }
-
-    useEffect(() =>
-    {
-        getProducts();
-    },[])
-
-    console.log("load")
     return (
         <div 
-        className="Catalog"
+        className="CatalogPage"
         > 
             <Navbar />
             <section 
             className="page"
             >
-                {!loading 
-                    &&
-                    <h1 className="loading-text">
-                        Fetching products... 
-                    </h1>
-                }
-                <div 
-                className="desktop-catalog-grid"
-                >
-                    
-                    {loading && products.map((product,index) =>
-                    {
-                        return (<CatalogItem
-                            id={product.id} 
-                            productImage={product.api_featured_image} 
-                            productName={product.name}
-                            productPrice={product.price}
-                            />)
-                    })}                 
-                </div>
+                <CategorySelector 
+                    categoryImage={Blushes}
+                    categoryName="Blushes"
+                    categoryUrl="/blushes"
+                />
+                <CategorySelector 
+                    categoryImage={Bronzers}
+                    categoryName="Bronzers"
+                    categoryUrl="/bronzers"
+                />
+                <CategorySelector 
+                    categoryImage={Eyebrows}
+                    categoryName="Eyebrows"
+                    categoryUrl="/eyebrows"
+                />
+                <CategorySelector 
+                    categoryImage={Eyeliners}
+                    categoryName="Eyeliners"
+                    categoryUrl="/eyeliners"
+                />
+                <CategorySelector 
+                    categoryImage={Eyeshadows}
+                    categoryName="Eyeshadows"
+                    categoryUrl="/eyeshadows"
+                />
+                <CategorySelector 
+                    categoryImage={Foundations}
+                    categoryName="Foundations"
+                    categoryUrl="/foundations"
+                />
+
+                <CategorySelector 
+                    categoryImage={LipLiners}
+                    categoryName="Lip Liners"
+                    categoryUrl="/lipliners"
+                />
+                <CategorySelector 
+                    categoryImage={LipSticks}
+                    categoryName="Lipsticks"
+                    categoryUrl="/lipsticks"
+                />
+                <CategorySelector 
+                    categoryImage={Mascaras}
+                    categoryName="Mascaras"
+                    categoryUrl="/mascaras"
+                />
+                <CategorySelector 
+                    categoryImage={NailPolishes}
+                    categoryName="Nail Polishes"
+                    categoryUrl="/nailpolishes"
+                />
             </section>
             <Footer />
         </div>
