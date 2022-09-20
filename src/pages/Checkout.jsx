@@ -9,7 +9,7 @@ export const Checkout = () =>
         <div className="Checkout">
             <Navbar />
             <section 
-            className="page"
+            className="desktop-page"
             >
                 <div 
                 className="desktop-left-flex-container"
@@ -35,6 +35,11 @@ export const Checkout = () =>
                         Proceed to checkout
                     </button>
                 </div>
+            </section>
+            <section 
+            className="mobile-page"
+            >
+
             </section>
             <Footer />
         </div>

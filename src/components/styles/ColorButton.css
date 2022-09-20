@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.ColorButton {
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  height: 25px !important;
+  margin-bottom: 10px !important;
+  width: 25px !important;
+}
+.ColorButton:hover {
+  border: 2px solid black;
+}/*# sourceMappingURL=ColorButton.css.map */

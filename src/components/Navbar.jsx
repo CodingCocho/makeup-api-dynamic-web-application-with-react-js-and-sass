@@ -42,10 +42,7 @@ export const Navbar = () =>
                     className={ ({isActive}) => isActive ? "active-cart" : "shopping-cart-container"}
                     to="/checkout"
                     >
-                        <i 
-                        class="fa-solid fa-cart-shopping"
-                        >
-                        </i>
+                        <i class="fa-solid fa-bag-shopping"></i>
                         <p 
                         className='items-in-cart' 
                         id='items-in-cart'

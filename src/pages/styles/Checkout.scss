@@ -15,7 +15,7 @@ $logoFontFamily: 'Tangerine', cursive;
     min-width: 100vw !important;
     max-width: 100vw !important;
     overflow-x: hidden !important;
-    .page
+    .desktop-page
     {
         align-items: flex-start !important;
         display: flex !important;
@@ -57,4 +57,9 @@ $logoFontFamily: 'Tangerine', cursive;
             }
         }
     }
+    .mobile-page
+    {
+        display: none !important;
+    }
 }
+

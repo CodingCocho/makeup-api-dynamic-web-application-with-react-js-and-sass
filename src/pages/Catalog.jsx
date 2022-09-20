@@ -1,79 +1,100 @@
-import Blushes from '../images/blushes-category-photo.jpg';
-import Bronzers from '../images/bronzers-category-photo.jpg';
-import Eyebrows from '../images/eyebrows-category-photo.jpg'
-import Eyeliners from '../images/eyeliner-category-photo.jpg';
-import Eyeshadows from '../images/eyeshadows-category-photo.jpg';
-import Foundations from '../images/foundations-category-photo.jpg';
-import LipLiners from '../images/lipliners-category-photo.jpg';
-import LipSticks from '../images/lipsticks-category-photo.jpg';
-import Mascaras from '../images/mascara-category-photo.jpg';
-import NailPolishes from '../images/nail-polishes-category-photo.jpg';
-import { CategorySelector } from '../components/CategorySelector';
+import axios from 'axios';
+import {useState,useEffect} from 'react';
+
+import {CatalogItem} from '../components/CatalogItem'
 import {Footer} from '../components/Footer';
 import {Navbar} from '../components/Navbar';
 import './styles/Catalog.css'
 
 export const Catalog = () =>
 {
+    const [products, setProducts] = useState([])
+
+    const [loading, setLoading] = useState(false)
+
+    const getProducts= async () =>
+    {
+        try
+        {
+            const apiResponse = await axios.get('http://makeup-api.herokuapp.com/api/v1/products.json');
+            setProducts(apiResponse.data);
+            setLoading(true);
+        }
+        catch(err)
+        {
+            alert(err.message);
+        }
+    }
+
+    useEffect(()=>
+    {
+        getProducts();
+    },[])
+
     return (
         <div 
-        className="CatalogPage"
+        className="Catalog"
         > 
             <Navbar />
             <section 
-            className="page"
+            className="desktop-page"
             >
-                <CategorySelector 
-                    categoryImage={Blushes}
-                    categoryName="Blushes"
-                    categoryUrl="/blushes"
-                />
-                <CategorySelector 
-                    categoryImage={Bronzers}
-                    categoryName="Bronzers"
-                    categoryUrl="/bronzers"
-                />
-                <CategorySelector 
-                    categoryImage={Eyebrows}
-                    categoryName="Eyebrows"
-                    categoryUrl="/eyebrows"
-                />
-                <CategorySelector 
-                    categoryImage={Eyeliners}
-                    categoryName="Eyeliners"
-                    categoryUrl="/eyeliners"
-                />
-                <CategorySelector 
-                    categoryImage={Eyeshadows}
-                    categoryName="Eyeshadows"
-                    categoryUrl="/eyeshadows"
-                />
-                <CategorySelector 
-                    categoryImage={Foundations}
-                    categoryName="Foundations"
-                    categoryUrl="/foundations"
-                />
-
-                <CategorySelector 
-                    categoryImage={LipLiners}
-                    categoryName="Lip Liners"
-                    categoryUrl="/lipliners"
-                />
-                <CategorySelector 
-                    categoryImage={LipSticks}
-                    categoryName="Lipsticks"
-                    categoryUrl="/lipsticks"
-                />
-                <CategorySelector 
-                    categoryImage={Mascaras}
-                    categoryName="Mascaras"
-                    categoryUrl="/mascaras"
-                />
-                <CategorySelector 
-                    categoryImage={NailPolishes}
-                    categoryName="Nail Polishes"
-                    categoryUrl="/nailpolishes"
-                />
+            {!loading 
+            &&
+            <h1 className="loading-text">
+                Fetching all our products... 
+            </h1>
+            }
+                <div 
+                className="desktop-catalog-grid"
+                >
+                    {loading && products.map((product, index) =>
+                    {
+                        if(product.id &&
+                            product.api_featured_image &&
+                            product.name &&
+                            product.price &&
+                            product.price !== '0.0')
+                            return (<CatalogItem
+                                productImage={product.api_featured_image}
+                                productIndex={index} 
+                                productName={product.name}
+                                productPrice={product.price}
+                                />)
+                        else
+                            return (<></>)
+                    })}                 
+                </div>
+            </section>
+            <section 
+            className="mobile-page"
+            >
+                {!loading 
+            &&
+            <h1 className="loading-text">
+                Fetching all our products... 
+            </h1>
+            }
+                <div 
+                className="mobile-catalog-grid"
+                >
+                    {loading && products.map((product, index) =>
+                    {
+                        if(product.id &&
+                            product.api_featured_image &&
+                            product.name &&
+                            product.price &&
+                            product.price !== '0.0')
+                            return (<CatalogItem
+                                productImage={product.api_featured_image}
+                                productIndex={index} 
+                                productName={product.name}
+                                productPrice={product.price}
+                                />)
+                        else
+                            return (<></>)
+                    })}                 
+                </div>   
             </section>
             <Footer />
         </div>

@@ -13,9 +13,9 @@ $logoFontFamily: 'Tangerine', cursive;
     background-color: antiquewhite !important;
     min-height: 100vh !important;
     width: 100vw !important;
-    .page
+    .desktop-page
     {
-        display: block !important;
+        display: block;
         height: calc(100vh - 320px) !important;
         margin-left: auto !important;
         margin-right: auto !important;
@@ -31,7 +31,9 @@ $logoFontFamily: 'Tangerine', cursive;
         }
         .desktop-flex-container-1
         {
+            align-items: center !important;
             display: flex !important;
+            justify-content: space-between !important;
             margin-left: auto !important;
             margin-right: auto !important;
             margin-top: 40px !important;
@@ -62,6 +64,10 @@ $logoFontFamily: 'Tangerine', cursive;
                 outline: none !important;
             }
         }
+    }
+    .mobile-page
+    {
+        display: none;
     }
 }
 
@@ -94,54 +100,97 @@ $logoFontFamily: 'Tangerine', cursive;
     width: 450px !important;
 }
 
-.hero-image-1
-{
-    position: relative !important;
-    left: 30px !important;
-}
 
-.hero-image-2
-{
-    position: relative !important;
-    right: 20px !important;
-}
 
-.hero-text-1
+
+
+@media only screen and (max-width: 375px) 
 {
-    color: white !important;
-    cursor: pointer !important;
-    display: block !important;
-    font-family: $logoFontFamily !important;
-    font-size: 2.25rem !important;
-    font-weight: 700 !important;
-    height: fit-content !important;
-    left: -370px !important;
-    position: relative !important;
-    text-align: left !important;
-    top: 20px !important;
-    white-space: nowrap !important;
-    &:hover
+    .Home
     {
-        text-shadow: 2px 2px black !important;
+        .desktop-page 
+        {
+            display: none !important;
+        }
+        .mobile-page
+        {
+            display: block !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            text-align: left !important;
+            width: 375px !important;
+        }
     }
-}
 
-.hero-text-2
-{
-    color: white !important;
-    cursor: pointer !important;
-    display: block !important;
-    font-family: $logoFontFamily !important;
-    font-size: 2.25rem !important;
-    font-weight: 700 !important;
-    height: fit-content !important;
-    left: -420px !important;
-    position: relative !important;
-    text-align: left !important;
-    top: 20px !important;
-    white-space: nowrap !important;
-    &:hover
+    .hero-image-1, .hero-image-2
     {
-        text-shadow: 2px 2px black !important;
+        border: 2px solid black !important;
+        box-shadow: 5px 5px 5px black !important;
+        display: block !important;
+        height: 250px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 250px !important;
+    }
+
+    .hero-image-1
+    {
+        left: 0px !important;
+        margin-top: 20px !important;
+        position: relative !important;
+    }
+
+    .hero-image-2
+    {
+        position: relative !important;
+        margin-bottom: 20px !important;
+        margin-top: 20px !important;
+        right: 0px !important;
+    }
+
+    .heading-1, .heading-2
+    {
+        color: black !important;
+        font-weight: 700 !important;
+        text-align: center !important;
+    }
+
+    .heading-1
+    {
+        font-family: $logoFontFamily;
+        font-size: 3rem !important;
+        margin-top: 40px !important;
+    }
+
+    .heading-2
+    {
+        font-family: $fontFamily;
+        font-size: 1.75rem !important;
+        margin-top: 20px !important;
+    }
+
+    .mobile-flex-container
+    {
+        align-items: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: 40px !important;
+        width: fit-content !important;
+        button
+        {
+            background-color: black !important;
+            border: 2px solid white !important;
+            box-shadow: 5px 5px 5px black !important;
+            color: white !important;
+            cursor: pointer;
+            font-family: $fontFamily !important;
+            font-size: 1rem !important;
+            font-weight: 700 !important;
+            margin-bottom: 20px !important;
+            padding: 10px !important;
+            outline: none !important;
+        }
     }
 }

@@ -7,7 +7,7 @@ export const Footer = () =>
         className="Footer"
         >
             <div 
-            className="desktop-flex-container"
+            className="flex-container"
             >
                 <ul 
                 className="footer-list" 

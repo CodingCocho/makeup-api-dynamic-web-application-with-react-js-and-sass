@@ -12,7 +12,7 @@ export const Home = () =>
         >
             <Navbar />
             <section 
-            className="page"
+            className="desktop-page"
             >
                 <div 
                 className="desktop-flex-container"
@@ -60,8 +60,53 @@ export const Home = () =>
                         src={HeroImage}
                         />
                     </div>
-                </div>    
+                </div>  
             </section>
+           
+
+            <section 
+            className="mobile-page"
+            >
+                <p 
+                className="home-heading-1"
+                >
+                    BEAUTY'S BIGGEST EVENT
+                </p>
+                <div 
+                className="flex-container"
+                >
+                    <p 
+                    className="home-heading-2"
+                    >
+                        21 Days of Beauty
+                    </p>
+                    <img 
+                    alt="makeup-model" 
+                    className="mobile-hero-image" 
+                    src={HeroImage}
+                    />
+                </div>
+                <p 
+                className="home-heading-3"
+                >
+                    It's here! The newest arrivals. The hottest exclusives. 50% off must-haves with Daily Beauty Steals®. Get to it.
+                </p>
+                <NavLink
+                className="shop-now-container"
+                exact
+                to="/catalog"
+                >
+                    <span 
+                    className="shop-now"
+                    >
+                        Shop now
+                    </span>
+                    <i 
+                    class="fa-solid fa-arrow-right"
+                    >
+                    </i>
+                </NavLink>
+            </section> 
             <Footer />
         </div>        
     )

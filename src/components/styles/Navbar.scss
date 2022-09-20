@@ -19,7 +19,7 @@ $logoFontFamily: 'Tangerine', cursive;
     {
         align-items: center !important; 
         background-color: black !important;
-        display: flex !important;
+        display: flex;
         justify-content: space-between !important;
         height: 100% !important;
         margin-left: auto !important;
@@ -52,40 +52,6 @@ $logoFontFamily: 'Tangerine', cursive;
                     height: 50px !important;
                     margin-left: 40px !important;
                     width: 50px !important;
-                }
-            }
-            .search-bar-container
-            {
-                align-items: center !important;
-                background-color: white !important;
-                border-radius: 5px !important;
-                display: flex !important;
-                margin-left: 40px !important;
-                padding-bottom: 5px !important;
-                padding-right: 10px !important;
-                padding-top: 5px !important;
-                width: 250px !important;
-                i
-                {
-                    color: black !important;
-                    font-size: 18px !important;
-                    margin-left: 5px !important;
-                }
-                .search-bar-input
-                {
-                    background-color: transparent !important;
-                    border: none !important;
-                    font-family: $fontFamily !important;
-                    font-size: 1rem !important;
-                    margin-left: 5px !important;
-                    margin-top: 7px !important;
-                    outline: none !important;
-                    width: 240px !important;
-                    &::placeholder
-                    {
-                        color:lightslategrey!important;
-                        font-family: $fontFamily !important;
-                    }
                 }
             }
         }
@@ -148,8 +114,8 @@ $logoFontFamily: 'Tangerine', cursive;
                     font-size: .875rem !important;
                     font-weight: 700 !important;
                     position: absolute !important;
-                    right: 10px !important;
-                    top: -1.5px !important;
+                    right: 9px !important;
+                    top: 10px !important;
                 }
             }
         }
@@ -178,8 +144,99 @@ $logoFontFamily: 'Tangerine', cursive;
         font-size: .875rem !important;
         font-weight: 700 !important;
         position: absolute !important;
-        right: 10px !important;
-        top: -1.5px !important;
+        right: 9px !important;
+        top: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 375px) 
+{
+    .navbar-component
+    {
+        .navbar
+        {
+            width: 100% !important;
+            .left-flex-container
+            {
+                .logo-flex-container
+                {
+                    .brand-name
+                    {
+                        color: white !important;
+                        cursor: pointer !important;
+                        font-family: $logoFontFamily !important;
+                        font-size: 1rem !important;
+                        font-weight: 700 !important;
+                        letter-spacing: .175rem !important;
+                        margin-left: 20px !important;
+                        white-space: nowrap !important;
+                    }
+                    .logo
+                    {
+                        cursor: pointer !important;
+                        height: 50px !important;
+                        margin-left: 20px !important;
+                        width: 50px !important;
+                    }
+                }
+            }
+            .right-flex-container
+            {
+                margin-right: 20px !important;
+                .active-link
+                {
+                    font-size: .75rem   !important;
+                    font-weight: 700 !important;
+                    letter-spacing: .125rem !important;
+                    margin-right: 20px !important;
+                    text-decoration: none !important;
+                    white-space: nowrap !important;
+                }
+                .unactive-link
+                {
+                    font-size: .75rem   !important;
+                    font-weight: 700 !important;
+                    letter-spacing: .125rem !important;
+                    margin-right: 20px !important;
+                    text-decoration: none !important;
+                    white-space: nowrap !important;
+                    &:hover
+                    {
+                        color: antiquewhite !important;
+                    }
+                }
+                .shopping-cart-container
+                {
+                    align-items: center !important;
+                    display: flex !important;
+                    height: 100% !important;
+                    justify-content: center;
+                    position: relative;
+                    text-decoration: none !important;
+                    width: 100% !important;
+                    i
+                    {
+                        color: white !important;
+                        cursor: pointer !important;
+                        font-size: 30px !important;
+                        &:hover
+                        {
+                            color: antiquewhite !important;
+                        }
+                    }
+                    .items-in-cart
+                    {
+                        color: black !important;
+                        cursor:  pointer !important;
+                        font-size: .875rem !important;
+                        font-weight: 700 !important;
+                        position: absolute !important;
+                        right: 9px !important;
+                        top: 10px !important;
+                    }
+                }
+            }
+        }
     }
 }
 

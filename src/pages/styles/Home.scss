@@ -13,9 +13,9 @@ $logoFontFamily: 'Tangerine', cursive;
     background-color: antiquewhite !important;
     min-height: 100vh !important;
     width: 100vw !important;
-    .page
+    .desktop-page
     {
-        display: block !important;
+        display: block;
         height: calc(100vh - 320px) !important;
         margin-left: auto !important;
         margin-right: auto !important;
@@ -110,4 +110,98 @@ $logoFontFamily: 'Tangerine', cursive;
             }
         }
     }
+    .mobile-page
+    {
+        display: none;
+    }
 }
+
+@media only screen and (max-width: 375px) 
+{
+    .desktop-page 
+    {
+        display: none !important;
+    }
+    .mobile-page
+    {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: left !important;
+        width: 375px !important;
+        .home-heading-1
+        {
+            color: black !important;
+            font-family: $fontFamily;
+            font-size: 1rem !important;
+            letter-spacing: .175rem !important;
+            margin-left: 20px !important;
+            margin-top: 40px !important;
+        }
+        .flex-container
+        {
+            align-items: center !important;
+            display: flex !important;
+            justify-content: space-between;
+            margin-top: 40px !important;
+            width: 375px !important;
+            .home-heading-2
+            {
+                color: black !important;
+                font-family: $logoFontFamily;
+                font-size: 3em !important;
+                font-weight: 700 !important;
+                margin-left: 20px !important;
+            }
+            .mobile-hero-image
+            {
+                border: 2px solid black !important;
+                box-shadow: 5px 5px 5px black !important;
+                display: block !important;
+                height: 150px !important;
+                margin-right: 20px !important;
+                width: 150px !important;
+            }
+        }
+        .home-heading-3
+        {
+            color: black !important;
+            font-family: $fontFamily;
+            font-size: 1rem !important;
+            margin-left: 20px !important;
+            margin-top: 40px !important;
+        }
+        .shop-now-container
+        {
+            align-items: center !important;
+            color: black !important;
+            cursor: pointer !important;
+            display: flex !important;
+            height: fit-content !important;
+            position: relative !important;
+            margin-bottom: 40px !important;
+            margin-left: 20px !important;
+            margin-top: 40px !important;
+            text-decoration: none !important;
+            width: fit-content !important;
+            i
+            {
+                margin-left: 10px !important;
+                transition: transform .5s !important;
+            }
+            .shop-now
+            {
+                font-family: $fontFamily;
+                font-size: 1rem !important;
+                font-weight: 700 !important;
+            }
+            &:hover
+            {
+                i
+                {
+                    transform: translate(5px, 0px); 
+                }
+            }
+        }
+    }
+  }

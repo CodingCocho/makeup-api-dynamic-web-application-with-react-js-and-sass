@@ -22,7 +22,7 @@ $logoFontFamily: 'Tangerine', cursive;
         display: flex !important;
         .product-image
         {
-            border: 1px solid black;
+            box-shadow: 5px 5px 5px black !important;
             height: 150px !important;
             width: 150px !important;
         }

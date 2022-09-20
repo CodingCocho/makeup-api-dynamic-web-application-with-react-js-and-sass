@@ -20,7 +20,7 @@ $logoFontFamily: 'Tangerine', cursive;
     right: 0px !important;
     min-width: 100vw !important;
     overflow-x: hidden !important;
-    .desktop-flex-container
+    .flex-container
     {
         align-items: flex-start!important;
         display: flex !important;
@@ -58,4 +58,34 @@ $logoFontFamily: 'Tangerine', cursive;
 ul, li
 {
     color: white !important;
+}
+
+@media only screen and (max-width: 375px)
+{
+    .Footer
+    {
+        .flex-container
+        {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+            width: 375px !important;
+            .footer-list
+            {
+                font-size: 1.75rem !important;
+                padding-right: 20px !important;
+                white-space: nowrap !important;
+                .footer-item
+                {
+                    font-size: .75rem !important;
+                    font-weight:  400 !important;
+                    letter-spacing: normal !important;
+                    margin-top: 4px !important;
+                    &:hover
+                    {
+                        color: antiquewhite !important;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -13,7 +13,7 @@
 .navbar-component .navbar {
   align-items: center !important;
   background-color: black !important;
-  display: flex !important;
+  display: flex;
   justify-content: space-between !important;
   height: 100% !important;
   margin-left: auto !important;
@@ -45,44 +45,6 @@
   height: 50px !important;
   margin-left: 40px !important;
   width: 50px !important;
-}
-.navbar-component .navbar .left-flex-container .search-bar-container {
-  align-items: center !important;
-  background-color: white !important;
-  border-radius: 5px !important;
-  display: flex !important;
-  margin-left: 40px !important;
-  padding-bottom: 5px !important;
-  padding-right: 10px !important;
-  padding-top: 5px !important;
-  width: 250px !important;
-}
-.navbar-component .navbar .left-flex-container .search-bar-container i {
-  color: black !important;
-  font-size: 18px !important;
-  margin-left: 5px !important;
-}
-.navbar-component .navbar .left-flex-container .search-bar-container .search-bar-input {
-  background-color: transparent !important;
-  border: none !important;
-  font-family: "Overpass", sans-serif !important;
-  font-size: 1rem !important;
-  margin-left: 5px !important;
-  margin-top: 7px !important;
-  outline: none !important;
-  width: 240px !important;
-}
-.navbar-component .navbar .left-flex-container .search-bar-container .search-bar-input::-moz-placeholder {
-  color: lightslategrey !important;
-  font-family: "Overpass", sans-serif !important;
-}
-.navbar-component .navbar .left-flex-container .search-bar-container .search-bar-input:-ms-input-placeholder {
-  color: lightslategrey !important;
-  font-family: "Overpass", sans-serif !important;
-}
-.navbar-component .navbar .left-flex-container .search-bar-container .search-bar-input::placeholder {
-  color: lightslategrey !important;
-  font-family: "Overpass", sans-serif !important;
 }
 .navbar-component .navbar .right-flex-container {
   align-items: center !important;
@@ -137,8 +99,8 @@
   font-size: 0.875rem !important;
   font-weight: 700 !important;
   position: absolute !important;
-  right: 10px !important;
-  top: -1.5px !important;
+  right: 9px !important;
+  top: 10px !important;
 }
 
 .active-cart {
@@ -161,6 +123,76 @@
   font-size: 0.875rem !important;
   font-weight: 700 !important;
   position: absolute !important;
-  right: 10px !important;
-  top: -1.5px !important;
+  right: 9px !important;
+  top: 10px !important;
+}
+
+@media only screen and (max-width: 375px) {
+  .navbar-component .navbar {
+    width: 100% !important;
+  }
+  .navbar-component .navbar .left-flex-container .logo-flex-container .brand-name {
+    color: white !important;
+    cursor: pointer !important;
+    font-family: "Tangerine", cursive !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.175rem !important;
+    margin-left: 20px !important;
+    white-space: nowrap !important;
+  }
+  .navbar-component .navbar .left-flex-container .logo-flex-container .logo {
+    cursor: pointer !important;
+    height: 50px !important;
+    margin-left: 20px !important;
+    width: 50px !important;
+  }
+  .navbar-component .navbar .right-flex-container {
+    margin-right: 20px !important;
+  }
+  .navbar-component .navbar .right-flex-container .active-link {
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.125rem !important;
+    margin-right: 20px !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+  }
+  .navbar-component .navbar .right-flex-container .unactive-link {
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.125rem !important;
+    margin-right: 20px !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+  }
+  .navbar-component .navbar .right-flex-container .unactive-link:hover {
+    color: antiquewhite !important;
+  }
+  .navbar-component .navbar .right-flex-container .shopping-cart-container {
+    align-items: center !important;
+    display: flex !important;
+    height: 100% !important;
+    justify-content: center;
+    position: relative;
+    text-decoration: none !important;
+    width: 100% !important;
+  }
+  .navbar-component .navbar .right-flex-container .shopping-cart-container i {
+    color: white !important;
+    cursor: pointer !important;
+    font-size: 30px !important;
+  }
+  .navbar-component .navbar .right-flex-container .shopping-cart-container i:hover {
+    color: antiquewhite !important;
+  }
+  .navbar-component .navbar .right-flex-container .shopping-cart-container .items-in-cart {
+    color: black !important;
+    cursor: pointer !important;
+    font-size: 0.875rem !important;
+    font-weight: 700 !important;
+    position: absolute !important;
+    right: 9px !important;
+    top: 10px !important;
+  }
 }/*# sourceMappingURL=Navbar.css.map */

@@ -1,0 +1,118 @@
+$fontFamily: 'Overpass', sans-serif;
+$logoFontFamily: 'Tangerine', cursive;
+
+*
+{
+    box-sizing: border-box !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.Product
+{
+    background-color: antiquewhite !important;
+    min-height: 100vh !important;
+    text-align: center !important;
+    width: 100vw !important;
+    .desktop-page
+    {
+        align-items: center !important;
+        display: flex !important;
+        justify-content: space-around;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        min-height: calc(100vh - 320px) !important;
+        text-align: center !important;
+        width: 1024px !important;
+        .left-desktop-flex-container
+        {
+            .image-container
+            {
+                box-shadow: 5px 5px 5px black !important;
+                height: 350px !important;
+                width: 350px !important;
+                .product
+                {
+                    height: 100% !important;
+                    width: 100% !important;
+                }
+            }
+        }
+        .right-desktop-flex-container
+        {
+            font-family: $fontFamily !important;
+            text-align: left !important;
+            .brand-name
+            {
+                font-size: 1rem !important;
+                text-decoration: underline !important;
+            }
+            .product-name
+            {
+                font-size: 2.5rem !important;
+                margin-top: 20px !important;
+                max-width: 450px !important;
+            }
+            .flex-container-1
+            {
+                align-items: center !important;
+                display: flex !important;
+                width: fit-content !important;
+                i
+                {
+                    margin-left: 2px !important;
+                    margin-right: 2px !important;
+                }
+            }
+            .price
+            {
+                font-size: 1.5rem !important;
+                margin-top: 20px !important;
+            }
+            .color-grid
+            {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr 1fr 1fr !important;
+                margin-top: 20px !important;
+            }
+            .flex-container-2
+            {
+                align-items: center !important;
+                display: flex !important;
+                margin-top: 20px !important;
+                .add-to-bag
+                {
+                    background-color: black !important;
+                    border: none !important;
+                    color: white !important;
+                    cursor: pointer !important;
+                    font-family: $fontFamily;
+                    font-weight: 700 !important;
+                    height: 40px !important;
+                    padding-left: 40px !important;
+                    padding-right: 40px !important;
+                }
+                .favorite-container
+                {
+                    align-items: center !important;
+                    border: 1px solid black !important;
+                    cursor: pointer !important;
+                    display: flex !important;
+                    height: 40px !important;
+                    justify-content: center !important;
+                    margin-left: 20px !important;
+                    width: 40px !important;
+                }
+            }
+        }
+    }
+    .mobile-page
+    {
+        display: none !important;
+    }
+}
+
+.loading-text
+{
+    padding-top: 40px !important;
+}

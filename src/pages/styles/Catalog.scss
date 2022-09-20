@@ -8,21 +8,59 @@ $logoFontFamily: 'Tangerine', cursive;
     padding: 0px !important;
 }
 
-.CatalogPage
+.Catalog
 {
     background-color: antiquewhite !important;
     min-height: 100vh !important;
     width: 100vw !important;
-    .page
+    .desktop-page
     {
-        align-content: space-evenly !important;
-        display: grid !important;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        display: block;
         margin-left: auto !important;
         margin-right: auto !important;
         min-height: calc(100vh - 320px) !important;
-        padding: 40px !important;
+        padding: 40px 40px !important;
         text-align: center !important;
         width: 1024px !important;
+        .desktop-catalog-grid
+        {
+            display: grid !important;
+            grid-template-columns: 1fr 1fr 1fr 1fr !important;
+        }
+    }
+    .mobile-page
+    {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 375px)
+{
+    .Catalog
+    {
+        .desktop-page
+        {
+            display: none !important;
+        }
+        .mobile-page
+        {
+            display: block !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            min-height: calc(100vh - 320px) !important;
+            padding-top: 20px !important;
+            text-align: center !important;
+            width: 375px !important;
+            .mobile-catalog-grid
+            {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                justify-items: center;
+                align-items: center;
+                width: 350px !important;
+            }
+        }
     }
 }
