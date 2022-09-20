@@ -39,7 +39,26 @@ export const Checkout = () =>
             <section 
             className="mobile-page"
             >
-
+                <CheckoutItem />
+                <CheckoutItem />
+                <CheckoutItem />
+                <CheckoutItem />
+                <CheckoutItem />
+                <CheckoutItem />
+                <div 
+                className="mobile-flex-container"
+                >
+                    <p 
+                    className="subtotal" 
+                    >
+                        Subtotal (<span id="total-item"> 1 item</span>): <span id="total-price"> $10.99</span>  
+                    </p>
+                    <button 
+                    className="place-order"
+                    >
+                        Proceed to checkout
+                    </button>
+                </div>
             </section>
             <Footer />
         </div>

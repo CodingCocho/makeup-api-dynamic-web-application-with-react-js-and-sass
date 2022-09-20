@@ -58,4 +58,60 @@
   font-family: "Overpass", sans-serif;
   font-size: 1.25rem !important;
   margin-left: 40px !important;
+}
+
+@media only screen and (max-width: 375px) {
+  .CheckoutItem {
+    height: 250px !important;
+    width: 300px !important;
+  }
+  .CheckoutItem .desktop-flex-container {
+    align-items: flex-start !important;
+    display: flex !important;
+  }
+  .CheckoutItem .desktop-flex-container .product-image {
+    box-shadow: 5px 5px 5px black !important;
+    height: 100px !important;
+    width: 100px !important;
+  }
+  .CheckoutItem .desktop-flex-container .desktop-flex-container-2 {
+    margin-left: 20px !important;
+    text-align: left !important;
+  }
+  .CheckoutItem .desktop-flex-container .desktop-flex-container-2 .product-name {
+    font-family: "Overpass", sans-serif;
+    font-size: 1rem !important;
+  }
+  .CheckoutItem .desktop-flex-container .desktop-flex-container-2 .price {
+    font-family: "Overpass", sans-serif;
+    font-size: 1.25rem !important;
+    margin-left: 0px !important;
+    margin-top: 20px !important;
+  }
+  .CheckoutItem .desktop-flex-container .desktop-flex-container-2 .in-stock {
+    color: green !important;
+    font-family: "Overpass", sans-serif;
+    font-size: 1rem !important;
+    margin-top: 20px !important;
+  }
+  .CheckoutItem .desktop-flex-container .desktop-flex-container-2 .desktop-flex-container-3 {
+    display: flex !important;
+    font-family: "Overpass", sans-serif;
+    font-weight: 700 !important;
+    margin-top: 20px !important;
+  }
+  .CheckoutItem .desktop-flex-container .desktop-flex-container-2 .desktop-flex-container-3 .delete {
+    background-color: black !important;
+    border-radius: 20px !important;
+    color: white !important;
+    cursor: pointer !important;
+    margin-left: 20px !important;
+    padding: 5px 12.5px !important;
+    outline: none !important;
+  }
+  .CheckoutItem .desktop-flex-container .desktop-flex-container-2 .desktop-flex-container-3 .quantity-input {
+    font-family: "Overpass", sans-serif !important;
+    font-size: 1rem !important;
+    padding: 5px 10px !important;
+  }
 }/*# sourceMappingURL=CheckoutItem.css.map */

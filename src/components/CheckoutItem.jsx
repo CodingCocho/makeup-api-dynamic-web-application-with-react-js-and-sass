@@ -25,6 +25,12 @@ export const CheckoutItem = () =>
                         Sample Product
                     </p>
                     <p 
+                    className="price" 
+                    id="price"
+                    >
+                        $10.99
+                    </p>
+                    <p 
                     className="in-stock"
                     >
                         In Stock
@@ -56,12 +62,7 @@ export const CheckoutItem = () =>
                     </div>
                 </div>
 
-                <p 
-                className="price" 
-                id="price"
-                >
-                    $10.99
-                </p>
+                
             </div>
         </div>
     )

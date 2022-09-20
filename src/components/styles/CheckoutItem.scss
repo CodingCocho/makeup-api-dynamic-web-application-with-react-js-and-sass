@@ -74,3 +74,72 @@ $logoFontFamily: 'Tangerine', cursive;
         }
     }
 }
+
+@media only screen and (max-width: 375px)
+{
+    .CheckoutItem
+    {
+        height: 250px !important;
+        width: 300px !important;
+        .desktop-flex-container
+        {
+            align-items: flex-start !important;
+            display: flex !important;
+            .product-image
+            {
+                box-shadow: 5px 5px 5px black !important;
+                height: 100px !important;
+                width: 100px !important;
+            }
+            .desktop-flex-container-2
+            {
+                margin-left: 20px !important;
+                text-align: left !important;
+                .product-name
+                {
+                    font-family: $fontFamily;
+                    font-size: 1rem !important;
+                }
+                .price
+                {
+                    font-family: $fontFamily;
+                    font-size: 1.25rem !important;
+                    margin-left: 0px !important;
+                    margin-top: 20px !important;
+                }
+                .in-stock
+                {
+                    color: green !important;
+                    font-family: $fontFamily;
+                    font-size: 1rem !important;
+                    margin-top: 20px !important;
+                }
+                .desktop-flex-container-3
+                {
+                    display: flex !important;
+                    font-family: $fontFamily;
+                    font-weight: 700 !important;
+                    margin-top: 20px !important;
+                    .delete
+                    {
+                        background-color: black !important;
+                        border-radius: 20px !important;
+                        color: white !important;
+                        cursor: pointer !important;
+                        margin-left: 20px !important;
+                        padding: 5px 12.5px !important;
+                        outline: none !important;
+                    }
+                    .quantity-input
+                    {
+                        font-family: $fontFamily !important;
+                        font-size: 1rem !important;
+
+                        padding: 5px 10px !important;
+                    }
+                }
+            }
+            
+        }
+    }
+}

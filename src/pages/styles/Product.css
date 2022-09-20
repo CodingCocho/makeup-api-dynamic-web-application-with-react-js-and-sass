@@ -12,7 +12,7 @@
 }
 .Product .desktop-page {
   align-items: center !important;
-  display: flex !important;
+  display: flex;
   justify-content: space-around;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -89,9 +89,113 @@
   width: 40px !important;
 }
 .Product .mobile-page {
-  display: none !important;
+  display: none;
 }
 
 .loading-text {
   padding-top: 40px !important;
+}
+
+@media only screen and (max-width: 375px) {
+  .desktop-page {
+    display: none !important;
+  }
+  .mobile-page {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    min-height: calc(100vh - 320px) !important;
+    text-align: center !important;
+    width: 375px !important;
+  }
+  .mobile-page .top-mobile-flex-container {
+    padding-top: 40px !important;
+    width: 100% !important;
+  }
+  .mobile-page .top-mobile-flex-container .image-container {
+    box-shadow: 5px 5px 5px black !important;
+    display: block !important;
+    height: 200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 200px !important;
+  }
+  .mobile-page .top-mobile-flex-container .image-container .product {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .mobile-page .bottom-mobile-flex-container {
+    font-family: "Overpass", sans-serif !important;
+    padding-bottom: 40px !important;
+    padding-top: 40px !important;
+    text-align: left !important;
+    width: 375px !important;
+  }
+  .mobile-page .bottom-mobile-flex-container .brand-name {
+    font-size: 1rem !important;
+    padding-left: 40px !important;
+    text-decoration: underline !important;
+  }
+  .mobile-page .bottom-mobile-flex-container .product-name {
+    font-size: 2.5rem !important;
+    margin-top: 20px !important;
+    max-width: 250px !important;
+    padding-left: 40px !important;
+  }
+  .mobile-page .bottom-mobile-flex-container .flex-container-1 {
+    align-items: center !important;
+    display: flex !important;
+    padding-left: 40px !important;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+  }
+  .mobile-page .bottom-mobile-flex-container .flex-container-1 i {
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+  }
+  .mobile-page .bottom-mobile-flex-container .price {
+    font-size: 1.5rem !important;
+    margin-top: 20px !important;
+    padding-left: 40px !important;
+  }
+  .mobile-page .bottom-mobile-flex-container .color-grid {
+    align-items: center;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    justify-items: center;
+    margin-top: 20px !important;
+  }
+  .mobile-page .bottom-mobile-flex-container .flex-container-2 {
+    align-items: center !important;
+    display: flex !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 20px !important;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+  }
+  .mobile-page .bottom-mobile-flex-container .flex-container-2 .add-to-bag {
+    background-color: black !important;
+    border: none !important;
+    color: white !important;
+    cursor: pointer !important;
+    font-family: "Overpass", sans-serif;
+    font-weight: 700 !important;
+    height: 40px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+  .mobile-page .bottom-mobile-flex-container .flex-container-2 .favorite-container {
+    align-items: center !important;
+    border: 1px solid black !important;
+    cursor: pointer !important;
+    display: flex !important;
+    height: 40px !important;
+    justify-content: center !important;
+    margin-left: 20px !important;
+    width: 40px !important;
+  }
 }/*# sourceMappingURL=Product.css.map */

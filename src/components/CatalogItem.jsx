@@ -6,9 +6,6 @@ export const CatalogItem = (props) =>
 
     const {productImage, productIndex, productName, productPrice} = props;
 
-    console.log(productIndex);
-
-    
     return (
         
             
