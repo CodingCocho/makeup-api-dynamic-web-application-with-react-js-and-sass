@@ -35,7 +35,7 @@ function App() {
         <Route
         element={<Checkout />}
         index
-        path="checkout"
+        path="/checkout"
         >
          </Route>
          
