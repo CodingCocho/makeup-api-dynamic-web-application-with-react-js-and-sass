@@ -14,17 +14,18 @@
   height: calc(100vh - 320px) !important;
   margin-left: auto !important;
   margin-right: auto !important;
+  max-width: none !important;
   text-align: center !important;
   width: 1024px !important;
 }
 .Home .desktop-page .desktop-flex-container {
   align-items: flex-start !important;
   display: flex !important;
-  height: 600px !important;
+  height: 500px !important;
   width: 1024px !important;
 }
 .Home .desktop-page .desktop-flex-container .left-flex-container {
-  height: 600px !important;
+  height: 500px !important;
   width: 50% !important;
   text-align: left !important;
 }
@@ -82,14 +83,14 @@
   align-items: center !important;
   display: flex !important;
   justify-content: center !important;
-  height: 600px !important;
+  height: 500px !important;
   width: 50% !important;
 }
 .Home .desktop-page .desktop-flex-container .right-flex-container .desktop-hero-image {
   border: 2px solid black !important;
   box-shadow: 5px 5px 5px black !important;
   display: block !important;
-  height: 500px !important;
+  height: 400px !important;
   margin-left: auto !important;
   margin-right: auto !important;
   width: 400px !important;
