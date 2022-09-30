@@ -19,7 +19,7 @@ export const Product = () =>
     {
         try
         {
-            const apiResponse = await axios.get('http://makeup-api.herokuapp.com/api/v1/products.json');
+            const apiResponse = await axios.get('https://makeup-api.herokuapp.com/api/v1/products.json');
             setProduct(apiResponse.data[params.productIndex]);
             setLoading(true);
         }

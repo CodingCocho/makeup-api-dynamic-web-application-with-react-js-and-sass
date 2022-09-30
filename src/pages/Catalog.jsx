@@ -16,7 +16,7 @@ export const Catalog = () =>
     {
         try
         {
-            const apiResponse = await axios.get('http://makeup-api.herokuapp.com/api/v1/products.json');
+            const apiResponse = await axios.get('https://makeup-api.herokuapp.com/api/v1/products.json');
             setProducts(apiResponse.data);
             setLoading(true);
         }
