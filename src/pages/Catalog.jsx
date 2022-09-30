@@ -1,6 +1,5 @@
 import axios from 'axios';
 import {useState,useEffect} from 'react';
-
 import {CatalogItem} from '../components/CatalogItem'
 import {Footer} from '../components/Footer';
 import {Navbar} from '../components/Navbar';
