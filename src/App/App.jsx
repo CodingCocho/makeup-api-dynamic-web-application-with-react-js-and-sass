@@ -42,14 +42,9 @@ function App() {
         <Route
         element={<Giftcards />}
         index
-        path="giftcards"
+        path="/giftcards"
         >
         </Route>
-        {/* <Route
-        element={<ErrorPage />}
-        path="*"
-        >
-        </Route> */}
       </Routes>
     </BrowserRouter>
   );
