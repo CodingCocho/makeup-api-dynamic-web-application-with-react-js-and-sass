@@ -1,8 +1,27 @@
-import SampleProduct from '../images/product-example.png'
+import{useDispatch} from 'react-redux';
+import {removeFromCart, incrementProduct, decrementProduct} from '../utilities/CartSlice';
 import './styles/CheckoutItem.css';
 
-export const CheckoutItem = () =>
+export const CheckoutItem = (props) =>
 {
+    const dispatch = useDispatch();
+    const {count, index, productImage, productName, productPrice} = props;
+
+    const increment = () =>
+    {
+        dispatch(incrementProduct(index));
+    }
+
+    const decrement = () =>
+    {
+        dispatch(decrementProduct(index))
+    }
+
+    const removeProduct = () =>
+    {
+        dispatch(removeFromCart(index));
+    }
+
     return (
         <div 
         className="CheckoutItem"
@@ -13,22 +32,21 @@ export const CheckoutItem = () =>
                 <img 
                 alt="sample-product" 
                 className="product-image" 
-                src={SampleProduct}
+                src={productImage}
                 />
-
                 <div 
                 className="desktop-flex-container-2"
                 >
                     <p 
                     className="product-name"
                     >
-                        Sample Product
+                        {productName}
                     </p>
                     <p 
                     className="price" 
                     id="price"
                     >
-                        $10.99
+                        ${productPrice}
                     </p>
                     <p 
                     className="in-stock"
@@ -38,31 +56,31 @@ export const CheckoutItem = () =>
                     <div 
                     className="desktop-flex-container-3"
                     >
-                        <select   
-                        className="quantity-input"
-                        id="quantity-selector"
-                        name="quantity"
+                        <div 
+                        className="quantity-container"
                         >
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>            
-                        </select>
+                            <i 
+                            class="fa-solid fa-minus"
+                            onClick={decrement}
+                            >
+                            </i>
+                            <p 
+                            id="quantity">
+                                {count}
+                            </p>
+                            <i 
+                            class="fa-solid fa-plus"
+                            onClick={increment}
+                            ></i>
+                        </div>
                         <button 
                         className="delete"
+                        onClick={removeProduct}
                         >
                             Delete
                         </button>
                     </div>
                 </div>
-
-                
             </div>
         </div>
     )

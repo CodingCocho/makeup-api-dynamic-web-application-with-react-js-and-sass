@@ -40,9 +40,9 @@ export const Catalog = () =>
             >
             {!loading 
             &&
-            <h1 className="loading-text">
+            <h2 className="loading-text">
                 Fetching all our products... 
-            </h1>
+            </h2>
             }
                 <div 
                 className="desktop-catalog-grid"
@@ -58,7 +58,7 @@ export const Catalog = () =>
                                 productImage={product.api_featured_image}
                                 productIndex={index} 
                                 productName={product.name}
-                                productPrice={product.price}
+                                productPrice={Number(product.price).toFixed(2)}
                                 />)
                         else
                             return (<></>)

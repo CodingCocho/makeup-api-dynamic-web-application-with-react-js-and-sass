@@ -1,10 +1,12 @@
 import './styles/Navbar.css';
 import Logo from '../images/logo.png'
 import {NavLink} from 'react-router-dom';
+import{useSelector} from 'react-redux';
 
 export const Navbar = () =>
 {
-
+    const cartLength = useSelector(state => state.cart.itemsAdded);
+    
     return (
         <div className="navbar-component">
             <div className="navbar">
@@ -47,7 +49,7 @@ export const Navbar = () =>
                         className='items-in-cart' 
                         id='items-in-cart'
                         >
-                            0
+                            {cartLength}
                         </p>
                     </NavLink>
                 </div> 

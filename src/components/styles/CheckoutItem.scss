@@ -22,7 +22,7 @@ $logoFontFamily: 'Tangerine', cursive;
         display: flex !important;
         .product-image
         {
-            box-shadow: 5px 5px 5px black !important;
+            border: 2.5px solid black;
             height: 150px !important;
             width: 150px !important;
         }
@@ -44,9 +44,28 @@ $logoFontFamily: 'Tangerine', cursive;
             }
             .desktop-flex-container-3
             {
+                align-items: center !important;
+                display: flex !important;
                 font-family: $fontFamily;
                 font-weight: 700 !important;
                 margin-top: 30px !important;
+                .quantity-container
+                {
+                    align-items: center !important;
+                    display: flex !important;
+                    i
+                    {
+                        cursor: pointer !important;
+                        font-size: 1rem !important;
+                        margin-left: 5px !important;
+                        margin-right: 5px !important;
+                    }
+                    p
+                    {
+                        font-family: $fontFamily !important;
+                        font-size: 1.25rem !important;
+                    }
+                }
                 .delete
                 {
                     background-color: black !important;
@@ -57,20 +76,13 @@ $logoFontFamily: 'Tangerine', cursive;
                     padding: 5px 12.5px !important;
                     outline: none !important;
                 }
-                .quantity-input
-                {
-                    font-family: $fontFamily !important;
-                    font-size: 1rem !important;
-
-                    padding: 5px 10px !important;
-                }
+                
             }
         }
         .price
         {
             font-family: $fontFamily;
             font-size: 1.25rem !important;
-            margin-left: 40px !important;
         }
     }
 }

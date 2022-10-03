@@ -92,7 +92,10 @@
   display: none;
 }
 
-.loading-text {
+.loading-text-product {
+  top: 120px !important;
+  right: calc(50% - 140px) !important;
+  position: absolute !important;
   padding-top: 40px !important;
 }
 

@@ -5,14 +5,14 @@ import {Navbar} from '../components/Navbar';
 import './styles/Product.css';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import {addToCart} from '../utilities/CartSlice';
+import{useDispatch} from 'react-redux';
 
 export const Product = () =>
 {
-
+    const dispatch = useDispatch();
     const params = useParams()
-
     const [product, setProduct] = useState()
-
     const [loading, setLoading] = useState(false)
 
     const getProduct = async () =>
@@ -29,6 +29,13 @@ export const Product = () =>
         }
     }
 
+    const addProductToCart = () =>
+    {
+        dispatch(addToCart(product));
+        // setItems(items.push(product));
+        // console.log(items);
+    }
+
     useEffect(()=>
     {
         getProduct();
@@ -40,15 +47,16 @@ export const Product = () =>
         className="Product"
         >
             <Navbar />
-            {!loading 
-                &&
-                <h2 className="loading-text">
-                    Fetching your product... 
-                </h2>
-            }
+            
             <section 
             className="desktop-page"
             >
+                {!loading 
+                &&
+                <h2 className="loading-text-product">
+                    Fetching your product... 
+                </h2>
+                }   
                 <div 
                 className="left-desktop-flex-container"
                 >
@@ -104,7 +112,7 @@ export const Product = () =>
                         <p 
                         className="price"
                         >
-                            ${product.price}
+                            ${product.price}0
                         </p>
                     }
 
@@ -130,6 +138,7 @@ export const Product = () =>
                         >
                             <button 
                             className="add-to-bag"
+                            onClick={addProductToCart}
                             >
                                 ADD TO BAG
                             </button>
@@ -200,7 +209,7 @@ export const Product = () =>
                         <p 
                         className="price"
                         >
-                            ${product.price}
+                            ${product.price}0
                         </p>
                     }
 
@@ -226,6 +235,7 @@ export const Product = () =>
                         >
                             <button 
                             className="add-to-bag"
+                            onClick={addProductToCart}
                             >
                                 ADD TO BAG
                             </button>

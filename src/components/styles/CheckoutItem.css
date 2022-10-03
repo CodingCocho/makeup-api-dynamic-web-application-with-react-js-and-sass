@@ -17,7 +17,7 @@
   display: flex !important;
 }
 .CheckoutItem .desktop-flex-container .product-image {
-  box-shadow: 5px 5px 5px black !important;
+  border: 2.5px solid black;
   height: 150px !important;
   width: 150px !important;
 }
@@ -36,9 +36,25 @@
   margin-top: 30px !important;
 }
 .CheckoutItem .desktop-flex-container .desktop-flex-container-2 .desktop-flex-container-3 {
+  align-items: center !important;
+  display: flex !important;
   font-family: "Overpass", sans-serif;
   font-weight: 700 !important;
   margin-top: 30px !important;
+}
+.CheckoutItem .desktop-flex-container .desktop-flex-container-2 .desktop-flex-container-3 .quantity-container {
+  align-items: center !important;
+  display: flex !important;
+}
+.CheckoutItem .desktop-flex-container .desktop-flex-container-2 .desktop-flex-container-3 .quantity-container i {
+  cursor: pointer !important;
+  font-size: 1rem !important;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+}
+.CheckoutItem .desktop-flex-container .desktop-flex-container-2 .desktop-flex-container-3 .quantity-container p {
+  font-family: "Overpass", sans-serif !important;
+  font-size: 1.25rem !important;
 }
 .CheckoutItem .desktop-flex-container .desktop-flex-container-2 .desktop-flex-container-3 .delete {
   background-color: black !important;
@@ -49,15 +65,9 @@
   padding: 5px 12.5px !important;
   outline: none !important;
 }
-.CheckoutItem .desktop-flex-container .desktop-flex-container-2 .desktop-flex-container-3 .quantity-input {
-  font-family: "Overpass", sans-serif !important;
-  font-size: 1rem !important;
-  padding: 5px 10px !important;
-}
 .CheckoutItem .desktop-flex-container .price {
   font-family: "Overpass", sans-serif;
   font-size: 1.25rem !important;
-  margin-left: 40px !important;
 }
 
 @media only screen and (max-width: 375px) {
